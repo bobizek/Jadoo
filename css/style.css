@@ -485,6 +485,7 @@ header .authentication {
 		max-width: 504;
 		padding: 25px 68px 35px;
 		display: inline-block;
+		
 		q {
 
 			font-family: 'Poppins';
@@ -544,7 +545,68 @@ header .authentication {
 			cursor: pointer;
 		}
 	}
+}
 
+#contact {
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 170px;
+	.airlines {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.sub {
+		padding: 80px 155px;
+		border: 1px solid #DFD7F9;
+		background: #DFD7F9;
+		border-radius: 130px 20px 20px 20px;
+		margin-top: 125px;
+
+		div {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 33px;
+			line-height: 54px;
+			/* or 164% */
+			text-align: center;
+			color: #5E6282;
+		}
+		form {
+			display: flex;
+			justify-content: center;
+			margin-top: 75px;
+			input {
+				/* background: url(/imgs/msg-icon.png) no-repeat center left; */
+				width: 420px;
+				height: 68px;
+				border: none;
+				border-radius: 10px;
+				outline: none;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 17px;
+				color: #39425D;
+				padding-left: 30px;
+			}
+			button {
+				width: 180px;
+				height: 68px;
+				background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+				border-radius: 10px;
+				color: white;
+				border: none;
+				outline: none;
+				margin-left: 25px;
+			}
+		}
+
+
+	}
 }
 
 footer {
