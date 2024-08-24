@@ -92,6 +92,10 @@ header .authentication {
 	z-index: -1;
 }
 
+.deco2 {
+	position: absolute;
+}
+
 .deco path {
 	position: relative;
 	border: 5px solid red;
@@ -125,7 +129,7 @@ header .authentication {
 		color: #14183E;
 	}
 }
-
+/*------------------- MAIN --------------------*/
 #main {
 	margin-top: 30px;
 	margin-left: 150px;
@@ -150,48 +154,66 @@ header .authentication {
 		margin-top: 20px;
 	}
 
-	div {
+	h2 {
 		width: 477px;
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 30px;
 		color: #5E6282;
 		margin-top: 20px;
-
 	}
 
-	:nth-child(4) {
-		padding: 20px 26px;
-		margin-top: 25px;
-		background-color: #F1A501;
-		color: white;
-		border: none;
-		border-radius: 10px;
-		font-size: 18px;
-		/* yellow */
-		background: #F1A501;
-		box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+	.buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 26px;
+	/* identical to box height */
+	color: #686D77;
+		button:hover {
+			cursor: pointer;
+		}
+		button:first-child {
+			padding: 20px 26px;
+			color: white;
+			border: none;
+			border-radius: 10px;
+			font-size: 18px;
+			background: #F1A501;
+			box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+		}
+		#play-demo {
+			margin-left: 44px;
+			padding: 20px;
+			background-color: #DF6951;
+			box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+			border: none;
+			border-radius: 50px;
+			color: white;
+			height: 61px;
+			width: 61px;
+		}
+		.play-demo svg {
+			box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);	
+		}
+		label {
+			margin-left: 20px;
+		}
+		label:hover{
+			cursor: pointer;
+		}
 	}
 
-	.play-demo {
-		margin-top: 25px;
-		margin-left: 44px;
-		padding: 20px;
-		background-color: #DF6951;
-		border: none;
-		border-radius: 50px;
-		color: white;
-		height: 61px;
-		width: 61px;
-	}
 
-	.play-demo svg {
-		box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);	
-	}
 }
-
+/*------------------- SERVICES --------------------*/
 #services {
 	margin-top: 100px;
+	position: relative;
 
 	h3 {
 		text-align: center;
@@ -204,10 +226,9 @@ header .authentication {
 	.service-list {
 		display: flex;
 		justify-content: center;
-		
+		margin-top: 66px;
 		.service {
 			padding: 45px;
-			margin: 20px;
 			border: none;
 			border-radius: 36px;
 			position: relative;
@@ -231,8 +252,6 @@ header .authentication {
 			h6 {
 				display: inline-block;
 				width: 181px;
-
-				font-family: 'Poppins';
 				font-style: normal;
 				font-weight: 500;
 				font-size: 16px;
@@ -258,8 +277,13 @@ header .authentication {
 			}
 		}
 	}
+	.deco3 {
+		position: absolute;
+		top: 0px;
+		right: 58px;
+	}
 }
-
+/*------------------- TOP --------------------*/
 #top {
 	margin-top: 100px;
 
@@ -272,10 +296,7 @@ header .authentication {
 		justify-content: center;
 		margin-top: 60px;
 		color: #5E6282;
-		/* :nth-child(2) {
-			margin: 0 50px;
-		} */
-
+		position: relative;
 		.destination {
 			width: 315px;
 			height: 457px;
@@ -283,7 +304,7 @@ header .authentication {
 			border-radius: 25px;
 			filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.05));
 			background-color: #FFFFFF;
-
+			position: relative;
 			img {
 				border-radius: 25px 25px 0 0;
 			}
@@ -297,6 +318,13 @@ header .authentication {
 			svg {
 				margin: 0 10px 0 20px;
 			}
+			.deco4 {
+				position: absolute;
+				margin: 0;
+				top: 158px;
+				right: -64px;
+				z-index: -2;
+			}
 		}
 	}
 
@@ -304,7 +332,7 @@ header .authentication {
 		margin: 0 50px;
 	}
 }
-/*------------------- GUIDE	 --------------------*/
+/*------------------- GUIDE	--------------------*/
 #guide {
 	margin-top: 180px;
 	margin-left: 150px;
@@ -379,8 +407,6 @@ header .authentication {
 				line-height: 124.5%;
 				/* or 22px */
 				letter-spacing: 0.015em;
-	
-				/* black */
 				color: #080809;
 			}
 	
@@ -462,6 +488,13 @@ header .authentication {
 					}
 				}
 			}
+			.deco5 {
+				position: absolute;
+				left: -50px;
+				top: -210px;
+				z-index: -1;
+			}
+
 		}
 	}
 }
@@ -595,11 +628,11 @@ header .authentication {
 
 	.sub {
 		padding: 80px 155px;
-		border: 1px solid #DFD7F9;
-		background: #DFD7F9;
+		border: 1px solid #F4F1FD;
+		background: #F4F1FD;
 		border-radius: 130px 20px 20px 20px;
 		margin-top: 125px;
-
+		position: relative;
 		div {
 			font-family: 'Poppins';
 			font-style: normal;
@@ -615,7 +648,7 @@ header .authentication {
 			justify-content: center;
 			margin-top: 75px;
 			input {
-				/* background: url(/imgs/msg-icon.png) no-repeat center left; */
+				z-index: 1;
 				width: 420px;
 				height: 68px;
 				border: none;
@@ -640,12 +673,31 @@ header .authentication {
 				margin-left: 25px;
 			}
 		}
-
-
+		.deco6, .deco7, .deco8, .deco9 {
+			position: absolute;
+		} 
+		.deco6 {
+			bottom: 0px;
+			left: -87px;
+		}
+		.deco7 {
+			top:0;
+			right: 0;
+		}
+		.deco8 {
+			top: -13px;
+			right: -20px;
+		}
+		.deco9 {
+			bottom: -70px;
+			right: -99px;
+		}
 	}
+
 }
 
 footer {
+	margin-top: 166px;
 	section {
 		display: flex;
 		flex-direction: row;

@@ -1,3 +1,14 @@
+// MAIN
+function findOutMore() {
+    alert('more');
+}
+
+function playDemo() {
+    alert('demo');
+}
+
+
+
 // REVIEWS
 
 let elements = document.querySelectorAll("#reviews .arrows button");
